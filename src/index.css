@@ -5,3 +5,32 @@ body{
   background-color: rgb(29, 29, 29);
   color: white;
 }
+
+.blog-box {
+  background-color: rgb(45, 45, 45);
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+
+.date{
+  color: rgb(192, 192, 192);
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.header-button{
+  background-color: rgb(45, 45, 45);
+  color: white;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.header > h5 {
+  color: rgb(192, 192, 192);
+}
