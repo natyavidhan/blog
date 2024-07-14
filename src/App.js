@@ -5,7 +5,7 @@ function App() {
 		<div className="container mt-5">
 			<div className="header text-center">
 				<h1>Natya's Blog</h1>
-				<h5>Stuff that facinates me</h5>
+				<h5>Stuff that fascinates me</h5>
 				<div className="buttons mt-3">
 					<button className="header-button">Home Page</button>
 					<button className="header-button">LinkedIn</button>
