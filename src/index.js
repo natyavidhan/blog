@@ -7,13 +7,12 @@ import {
 	createHashRouter,
 	RouterProvider,
 } from "react-router-dom";
-import $ from 'jquery';
 
 const blogs = [
 	{
 		"name": "Welcome!",
 		"date": "14-07-2024",
-		"page":	"blogs/welcome.md"
+		"page":	"blogs/14-07-2024.md"
 	}
 ]
 
