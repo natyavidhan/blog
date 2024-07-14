@@ -17,26 +17,16 @@ const blogs = [
 	}
 ]
 
-let routes = [
+const router = createHashRouter([
 	{
 		path: "/",
 		element: <App blogs={blogs} />
+	},
+	{
+		path: "/:date",
+		element: <Blog />
 	}
-]
-blogs.forEach((elem) => {
-	$.ajax({
-		type: 'GET',
-        url: elem.page,
-		success: function(msg){
-			routes.push({
-				path: `/blog/${elem.date}`,
-				element: <Blog name={elem.name} date={elem.date} markdown={msg} />
-			})
-		}
-	})
-})
-
-const router = createHashRouter(routes);
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<RouterProvider router={router} />

@@ -1,16 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { useParams } from 'react-router-dom';
 
-function Blog(props) {
-  return (
-    <div>Blog</div>
-  )
-}
+function Blog() {
+    const { date } = useParams();
 
-Blog.propTypes = {
-    name: PropTypes.string,
-    date: PropTypes.string,
-    markdown: PropTypes.string
+    return (
+        <div>{date}</div>
+    )
 }
 
 export default Blog
