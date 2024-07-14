@@ -1,6 +1,7 @@
 import Blogbox from "./components/blogbox";
+import PropTypes from 'prop-types'
 
-function App() {
+function App(props) {
 	return (
 		<div className="container mt-5">
 			<div className="header text-center">
@@ -13,10 +14,20 @@ function App() {
 				</div>
 			</div>
 			<div className="blogs mt-5">
-				<Blogbox name={"Yes"} date={"17-11-2006"}/>
+				{/* {props.blogs[0].name} */}
+				{props.blogs.map((elem)=>{
+					return <Blogbox
+						name={elem.name}
+						date={elem.date}
+					/>
+				})}
 			</div>
 		</div>
 	);
+}
+
+App.propTypes = {
+    blogs: PropTypes.array
 }
 
 export default App;
